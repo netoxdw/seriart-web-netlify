@@ -1,3 +1,7 @@
+@font-face {
+  font-family: TRHarpoon;
+  src: url(./../../assets/fonts/TRHarpoon.ttf);
+}
 :root {
   /* Colores */
   --colorPrincipal: #0d1cc6;
@@ -33,6 +37,9 @@ html {
 
 [id] {
   scroll-margin-top: 70px;
+}
+.seriart{
+  font-family: TRHarpoon;
 }
 
 
@@ -80,11 +87,11 @@ html {
   overflow: hidden;
 }
 
-.hero > .container h1 {
+.hero h1 .seriart {
   color: white;
-  font-weight: bolder;
-  font-size: 2em; /* Tamaño base para desktop */
+  font-size: 2em;
 }
+
 
 .hero p {
   color: white;
