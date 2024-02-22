@@ -93,7 +93,7 @@ body {
 /* paquetes */
 /* Estilos base */
 .grid-container {
-  margin-top: 30px;
+  margin-top: 80px;
   margin-bottom: 80px;
 }
 
@@ -151,16 +151,17 @@ body {
 /* ################################################################################################### */
 /* acerca de nostros */
 .about-us {
-  background-color: #fff;
+  background-color: var(--colorPrincipal2);
   /* Color de fondo */
   padding: 40px 20px;
   /* Espaciado interno */
   text-align: center;
   /* Alineación del texto */
+  border-radius: 20px;
 }
 
 .about-us h3 {
-  color: #333;
+  color: white;
   /* Color del título */
   font-size: 2.5em;
   /* Tamaño del título */
@@ -169,7 +170,7 @@ body {
 }
 
 .about-us p {
-  color: #666;
+  color: white;
   /* Color del texto */
   font-size: 1em;
   /* Tamaño del texto */
