@@ -4,258 +4,835 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Captura tu graduación inolvidable con nuestros paquetes exclusivos: fotos en marcos elegantes, diplomas, agradecimientos personalizados y anillos únicos.">
+  <title>Landing Page</title>
+  <!-- Link de Bootstrap 5 (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
 
-  <!-- BOOTSTRAP -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-
-
-  <!-- FONTS -->
-
-  <script src="https://kit.fontawesome.com/ff3cb8b610.js" crossorigin="anonymous"></script>
-
-
-  <link rel="stylesheet" href="./static/style/style.css">
-  <title>Seriart | Fotos de graduación</title>
+  <!-- Tu hoja de estilos personalizada -->
+  <link rel="stylesheet" href="/assets/style/style.css">
 </head>
 
 <body>
 
-  <!-- Header barra de navegacion -->
-  <div class="fixed">
-    <header class="header">
-      <nav class="navbar navbar-expand-lg navbar-dark ">
-        <div class="container-fluid">
-          <a class="navbar-brand seriart" href="./index.html">Seriart</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link active" href="#paquetes">Paquetes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#textos">Textos de agradecimiento</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  Productos
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#togas">Togas</a></li>
-                  <li><a class="dropdown-item" href="#carpetas-invitaciones">Carpetas</a></li>
-                  <li><a class="dropdown-item" href="#carpetas-invitaciones">Invitaciones</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#horarios">Horarios</a>
-              </li>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container">
+      <!-- Logo centrado -->
+      <a class="navbar-brand mx-auto" href="#">
+        <!-- Ajusta la ruta y nombre de archivo de tu logo -->
+        <!-- SERIART TEZIUTLÁN -->
+      </a>
+    </div>
+  </nav>
+  <!-- Fin Navbar -->
 
-            </ul>
+  <!-- Sección principal -->
+  <main class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <!-- Contenido textual (columna izquierda) -->
+        <div class="col-lg-6 text-white">
+          <h1 class="mb-4">
+            ¡Tu foto de graduación, capturado a la <span>perfección!</span>
+          </h1>
+          <p class="mb-4">
+            Con asesoría para lucir increíble en tus fotos.
+            
+          </p>
+
+          <!-- Características -->
+          <ul class="list-unstyled mb-4">
+            <li class="mb-2">
+              <i class="bi bi-check-circle-fill text-success me-2"></i>
+              Fotos panoramica.
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check-circle-fill text-success me-2"></i>
+              Anillos de Graduación
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check-circle-fill text-success me-2"></i>
+             Togas
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check-circle-fill text-success me-2"></i>
+              Diplomas/Agradecimientos
+            </li>
+          </ul>
+
+          <!-- Botón de WhatsApp -->
+          <div class="btn-container" style="text-align: center;">
+            <a href="#contact" class="btn btn-lg btn-whatsapp d-inline-block">
+              <i class="bi bi-whatsapp me-2"></i>
+              Quiero más información
+            </a>
+            <p class="mb-4" style="margin-top: 5px; font-size: 15px; font-weight: 300;">
+              Sin compromiso
+            </p>
+          </div>
+
+
+        </div>
+
+        <!-- Video (columna derecha) -->
+        <div class="col-lg-6 mt-5 mt-lg-0">
+          <div class="ratio ratio-16x9">
+            <!-- Ajusta la URL de YouTube con el ID de tu video -->
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Video de YouTube" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
           </div>
         </div>
-      </nav>
-    </header>
-  </div>
-
-
-
-  <!-- Hero -->
-  <section class="hero" id="inicio">
-    <div class="conatiner">
-      <h1><span class="seriart">Seriart</span> <br>
-        Expertos en fotos de graduación Teziutlán</h1>
-      <p>
-        Descubre nuestros exclusivos paquetes de graduación con todo incluido: Universidades, preparatorias, secundarias
-        y primarias ¡Haz que tu graduación sea inolvidable con nosotros!
-      </p>
-      <a href="https://wa.me/2311749921?text=Buenas tardes, me inetresa una demostración de sus paquetes de graduación"
-        class="btn" target="_blank">Contáctanos por WhatsApp</a>
+      </div>
     </div>
+  </main>
 
+  <!-- Sección Problema-Solución -->
+  <section class="problem-solution position-relative">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-center mb-4">
+            Aun no eligen con quien <span>tomarse</span> su foto de graduación.
+          </h2>
+          <p class="text-center mb-5">
+            Seguramente te sientes identificado con alguna de las siguientes situaciones:
+          </p>
+        </div>
+      </div>
+
+      <!-- Card horizontal -->
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="card mb-3 horizontal-card">
+            <div class="row g-0 align-items-center">
+              <!-- Imagen de la card -->
+              <div class="col-md-4">
+                <img src="/assets/img/asesoria.jpg" alt="Problema" class="img-fluid rounded" />
+              </div>
+              <!-- Contenido de la card -->
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Nunca salgo <span>bien</span> en las fotos</h5>
+                  <p class="card-text">
+                    No te preocupes, nuestro equipo de fotógrafos está aquí para ayudarte. Te damos asesoría personalizada para que luzcas increíble en tu foto de graduación. ¡Confía en nosotros, tú solo disfruta el momento!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Si deseas más cards, duplica o añade más bloques similares -->
+        <div class="col-md-8">
+          <div class="card mb-3 horizontal-card">
+            <div class="row g-0 align-items-center">
+              <!-- Imagen de la card -->
+              <div class="col-md-4">
+                <img src="/assets/img/togas.jpg" alt="Problema" class="img-fluid rounded" />
+              </div>
+              <!-- Contenido de la card -->
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">No tenemos <span>uniforme</span> para la foto</h5>
+                  <p class="card-text">
+                    ¡Problema resuelto! Tenemos más de 400 togas de graduación disponibles, listas para prestarte y que puedas lucir como un verdadero graduado en tu sesión de fotos.  
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fin card -->
+
+        <div class="col-md-8">
+          <div class="card mb-3 horizontal-card">
+            <div class="row g-0 align-items-center">
+              <!-- Imagen de la card -->
+              <div class="col-md-4">
+                <img src="/assets/img/paisaje.jpg" alt="Problema" class="img-fluid rounded" />
+              </div>
+              <!-- Contenido de la card -->
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Nuestra escuela no tiene <span>instalaciones</span> bonitas para la foto</span></span>
+                  </h5>
+                  <p class="card-text">
+                    No pasa nada, ¡tenemos soluciones creativas! Hacemos fotomontajes que se ven naturales y elevan tu foto a otro nivel. También organizamos sesiones en hoteles y lugares icónicos para que tu foto sea toda una experiencia de glamour y estilo. 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fin card -->
+
+        <div class="col-md-8">
+          <div class="card mb-3 horizontal-card">
+            <div class="row g-0 align-items-center">
+              <!-- Imagen de la card -->
+              <div class="col-md-4">
+                <img src="/assets/img/M.S.I..jpg" alt="Problema" class="img-fluid rounded" />
+              </div>
+              <!-- Contenido de la card -->
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">NO PUEDO <span>PAGAR</span> MI PAQUETE EN UN SOLO PAGO</span></h5>
+                  <p class="card-text">
+                    ¡Sin estrés! Ofrecemos pagos flexibles que se ajustan a tus posibilidades. Es como en Elektra, pero sin los intereses. 😉
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fin card -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de características -->
+  <section class="features-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">¿Por qué una <span>Landing Page</span>?</h2>
+      <p class="text-center mb-5">
+        Es la mejor herramienta para generar contactos para tu despacho jurídico.
+      </p>
+
+      <div class="row g-4">
+        <!-- Tarjeta 1 -->
+        <div class="col-md-4">
+          <div class="card feature-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Chatbot con IA</h5>
+              <p class="card-text">
+                Un asistente inteligente que recibe a tus clientes, identifica sus problemas y recopila información
+                clave para que puedas abordarlos con precisión.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="col-md-4">
+          <div class="card feature-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Botones y mensajes para WhatsApp</h5>
+              <p class="card-text">
+                Facilita el contacto directo con tus clientes a través de WhatsApp, con botones personalizados y
+                mensajes predefinidos que mejoran la comunicación y aceleran el cierre de ventas.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="col-md-4">
+          <div class="card feature-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Diseño profesional</h5>
+              <p class="card-text">
+                Una landing page atractiva y moderna, diseñada para captar la atención y convertir visitantes en
+                clientes, con un enfoque en la usabilidad y la experiencia del usuario.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="col-md-4">
+          <div class="card feature-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Lead Magnet</h5>
+              <p class="card-text">
+                Ofrece valor adicional a tus visitantes mediante recursos como ebooks, cupones de descuento o guías
+                exclusivas, incentivando el registro y fortaleciendo tu relación con ellos.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="col-md-4">
+          <div class="card feature-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Optimización SEO</h5>
+              <p class="card-text">
+                Aumenta la visibilidad de tu landing page en buscadores como Google.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="col-md-4">
+          <div class="card feature-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Diseño de logo con IA</h5>
+              <p class="card-text">
+                Obtén un logotipo único y personalizado mediante inteligencia artificial, alineado con la identidad de
+                tu marca para destacar en tu sector.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
   </section>
 
 
-  <!-- Paquetes -->
-  <div class="container grid-container">
-    <section class="grid-layout" id="paquetes">
-      <div class="main" >
-        <h2>Paquetes universitarios</h2>
-        <p>Disponemos de seis variados paquetes diseñados para satisfacer cualquier preferencia, incluyendo una extensa
-          selección de marcos, junto con un diploma y palabras de agradecimiento. Además, brindamos la opción de un
-          distinguido anillo de graduación en oro o plata. Para hacer tu experiencia aún más memorable, increíbles
-          regalos .</p>
-        <!-- Botón de WhatsApp -->
-        <a href="https://wa.me/2311749921?text=Me interesa adquirir un paquete de gradiación para universidad"
-          target="_blank" class="btn">Contactar por WhatsApp</a>
-        <!-- Botón Ver más -->
-        <a href="./docs/SERIART PAQUETES UNIVERSITARIOS ENE 2024.pdf" target="_blank" class="btn btn-more">Ver más</a>
-      </div>
-      <div class="second">
-        <h2>Paquetes prepas</h2>
-        <p>Una amplia selección de marcos perfectos para preparatorias, junto con sesiones fotográficas profesionales y
-          un servicio excepcional.</p>
-        <!-- Botón de WhatsApp -->
-        <a href="https://wa.me/2311749921?text=Me interesa adquirir paquetes para prepa" target="_blank"
-          class="btn">Contactar por WhatsApp</a>
-        <!-- Botón Ver más -->
-        <a href="./docs/SERIART FOTOS PREPAS 2024.pdf" target="_blank" class="btn btn-more">Ver más</a>
-      </div>
-      <div class="second">
-        <h2>Paquetes secundarias y primarias</h2>
-        <p>Fotografías panorámicas únicas y atractivas, distinguibles de la competencia, ideales para niveles de
-          secundaria y primaria.</p>
-        <!-- Botón de WhatsApp -->
-        <a href="https://wa.me/2311749921?text=Me interesa adquirir paquetes para secundaria/primaria" target="_blank"
-          class="btn">Contactar por WhatsApp</a>
-        <!-- Botón Ver más -->
-        <a href="./docs/SERIART FOTOS PREPAS 2024.pdf" target="_blank" class=" btn btn-more">Ver más</a>
-      </div>
-    </section>
-  </div>
+  <!-- Sección About Me -->
+  <section class="about-me-section py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <!-- El contenedor con estilo de hoja -->
+        <div class="col-md-10 col-lg-8 paper-container p-4">
+          <div class="row align-items-center">
 
+            <!-- Columna de la foto profesional -->
+            <div class="col-md-4 text-center mb-3 mb-md-0">
+              <!-- Ajusta la ruta de tu foto y las clases para el estilo deseado -->
+              <img src="/assets/images/neto web.webp" alt="Foto profesional" class="img-fluid  foto-about-me" />
+            </div>
 
-  <!-- About -->
-  <div class="container">
-    <section class="about-us">
-      <h3>Acerca de Nosotros</h2>
-        <p>Somos una distinguida empresa ubicada en Teziutlán, orgullosa de contar con más de 25 años de experiencia en la
-          captura de momentos inolvidables de graduación. A lo largo de estos años, hemos tenido el honor de colaborar con
-          diversas escuelas en los estados de Puebla y Veracruz, proporcionando servicios de fotografía de graduación de
-          alta calidad. Nuestro compromiso es inmortalizar las celebraciones de logros académicos, ofreciendo a cada
-          graduado y sus familias recuerdos que atesorarán por siempre.</p>
-    </section>
-  </div>
+            <!-- Columna del texto -->
+            <div class="col-md-8">
+              <h2 class="mb-3">¿Quién <span>soy?</span></h2>
+              <p>
+                Soy Desarrollador Web con más de 5 años de experiencia creando sitios web profesionales que destacan por
+                su diseño, funcionalidad y enfoque en resultados y en 2 años ya hemos ayudado a más de 150 negocios a
+                alcanzar sus objetivos.
+              </p>
 
+              <h3 class="mt-5">¿Mi propósito?</h3>
+              <p class="mt-5">
+                Ayudar a todos esas personas que tienen problemas a la hora de vender sus servicios profesionales por
+                internet a que consigan hacerlo de la forma más sencilla posible.
+              </p>
+              <p>
+                Mi filosofia es hacer un marketing digital accesible para todo el mundo sin la necesidad de tener
+                conocimientos avanzados.
+              </p>
+            </div>
 
-  <!-- Otros articulos -->
-  <div class="container grid-container">
-    <section class="grid-layout" id="textos">
-      <div class="main">
-        <h2>Textos de agradecimiento</h3>
-          <p>Expresa tu gratitud a aquellos que te acompañaron en este viaje tan significativo, ofreciendo 29 variados
-            mensajes de agradecimiento adecuados para diversas situaciones</p>
-          <!-- Botón Ver más -->
-          <a href="./docs/TEXTOS DE AGRADECIMIENTO SERIART 21.pdf" target="_blank" class=" btn btn-more">Ver más</a>
-          <a href="/pages.html" target="_blank" class=" btn btn-more">REGISTRAR</a>
-      </div>
-      <div class="second" id="togas">
-        <h2>Togas</h3>
-          <p>Disponemos de una amplia selección de más de 700 togas, disponibles en diversas tallas, para capturar de
-            manera perfecta tu fotografía y celebrar tu ceremonia de graduación.</p>
-          <!-- Botón Ver más -->
-          <a href="" class="btn btn-more">Ver más</a>
-      </div>
-      <div class="second" id="carpetas-invitaciones">
-        <h2>Carpetas e invitaciones</h3>
-          <p>Producimos elegantes carpetas de curpiel, personalizadas con el emblema de tu institución, y diseñamos
-            invitaciones distinguidas para tu celebración de graduación.</p>
-          <!-- Botón Ver más -->
-          <a href="" class="btn btn-more">Ver más</a>
-      </div>
-    </section>
-  </div>
-
-
-  <footer class="text-white text-center text-lg-start bg-dark">
-    <!-- Grid container -->
-    <div class="container p-4">
-      <!--Grid row-->
-      <div class="row mt-4">
-        <!--Grid column-->
-        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
-          <h5 class="text-uppercase mb-4">Misión</h5>
-
-          <p>
-            Nuestra misión es capturar la esencia de cada graduación, ofreciendo fotografías, diplomas, agradecimientos
-            y anillos únicos.
-          </p>
-
-          <p>
-            Nos dedicamos a satisfacer a nuestros graduados, proporcionando togas de calidad y creando
-            recuerdos inolvidables con un servicio responsable y personalizado.
-          </p>
-
-          <div class="mt-4">
-            <!-- Facebook -->
-            <a type="button" href="https://www.facebook.com/seriart.teziutlan.3" target="_blank"
-              class="btn btn-more btn-floating btn-light btn-lg"><i class="fab fa-facebook-f"></i></a>
-            <a type="button" href="https://wa.me/2311749921?text=Me interesa adquirir paquetes de graduación"
-              target="_blank" class="btn btn-whatsapp btn-floating btn-light btn-lg"><i class="fab fa-whatsapp"></i></a>
           </div>
         </div>
-        <!--Grid column-->
+      </div>
+    </div>
+  </section>
 
-        <!--Grid column-->
-        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase mb-4 pb-1">Contacto</h5>
+  <!-- Sección "Para quién es una Landing Page?" -->
+  <section class="lp-target-section py-5">
+    <div class="container">
+      <!-- Fila principal: texto izquierda / imagen derecha -->
+      <div class="row align-items-center mb-5">
+        <!-- Columna texto -->
+        <div class="col-md-6">
+          <h3 class="mb-3">¿Para quién es una <span>Landing Page</span>?</h3>
+          <p>
+            Es para profesionales que quieren vender sus servicios juridicos por internet de una forma sencilla.
+          </p>
+        </div>
+        <!-- Columna imagen -->
+        <div class="col-md-6 text-center">
+          <!-- Ajusta la ruta de tu imagen -->
+          <img src="/assets/images/falta-tiempo.png" alt="Imagen descriptiva" class="img-fluid" />
+        </div>
+      </div>
 
 
-          <ul class="fa-ul" style="margin-left: 1.65em;">
-            <li class="mb-3">
-              <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Av. Juarez 907, Col. Centro,
-                73800, Teziutlán, Pue.</span>
+      <div class="row g-4">
+        <!-- Tarjeta 1 -->
+        <div class="col-md-6">
+          <div class="card h-100 side-border-card">
+            <div class="card-body">
+              <h5 class="card-title">Para <span>Abogados Independientes</span></h5>
+              <p class="card-text">
+                Si eres un abogado independiente y quieres dar un salto de calidad en tus servicios, esta es tu
+                oportunidad. A través de WhatsApp podrás crear tu propio proceso de agendar citas.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="col-md-6">
+          <div class="card h-100 side-border-card">
+            <div class="card-body">
+              <h5 class="card-title">Para <span>Despachos de Abogados</span></h5>
+              <p class="card-text">
+                Si perteneces a un despacho de abogados éxitoso, esta landing page les ayudara a consolidar su
+                credibilidad y obtener los clientes que estan buscando. Además podras crear tu estrategía de venta a
+                golpe de clic.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fin de la fila de tarjetas -->
+    </div>
+  </section>
+
+  <!-- Sección Call-to-Action -->
+  <section class="cta-section py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Columna con título, párrafo y lista -->
+        <div class="col-md-6 mb-4 mb-md-0 text-start text-md-start">
+          <h2 class="mb-3">
+            Apúntate ahora y <span>empieza hoy mismo</span>
+          </h2>
+          <p class="mb-4 ">
+            Todo lo que necesita un abogado en un mismo lugar:
+          </p>
+          <ul class="list-unstyled ">
+            <li>
+              <i class="bi bi-check-circle-fill text-success me-2"></i>
+              Anuncios
             </li>
-            <li class="mb-3">
-              <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">seriart5@yahoo.com.mx</span>
+            <li>
+              <i class="bi bi-check-circle-fill text-success me-2"></i>
+              Landing Page
             </li>
-            <li class="mb-3">
-              <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">31-2-55-87</span>
+            <li>
+              <i class="bi bi-check-circle-fill text-success me-2"></i>
+              Lead Magnet
+            </li>
+            <li>
+              <i class="bi bi-check-circle-fill text-success me-2"></i>
+              Chatbot con Inteligencia Artificial
             </li>
           </ul>
         </div>
-        <!--Grid column-->
 
-        <!--Grid column-->
-        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase mb-4" id="horarios" >Horarios de atención</h5>
-
-          <table class="table text-center text-white">
-            <tbody class="fw-normal">
-              <tr>
-                <td>Lunes - Viernes:</td>
-                <td>10am - 8pm</td>
-              </tr>
-              <tr>
-                <td>Sabado:</td>
-                <td>10am - 7pm</td>
-              </tr>
-              <tr>
-                <td>Domingo:</td>
-                <td>Cerrado</td>
-              </tr>
-            </tbody>
-          </table>
+        <!-- Columna con el botón de WhatsApp -->
+        <div class="col-md-4 text-center text-md-end">
+          <!-- Ajusta el enlace a tu número de WhatsApp -->
+          <a href="https://api.whatsapp.com/send?phone=TU_NUMERO" class="btn btn-lg btn-whatsapp px-4 py-2">
+            <i class="bi bi-whatsapp me-2"></i>
+            Quiero más información
+          </a>
         </div>
-        <!--Grid column-->
       </div>
-      <!--Grid row-->
     </div>
-    <!-- Grid container -->
+  </section>
 
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2024 Copyright:
-      <a class="text-white" href="#">Seriart.com</a>
-      <a href="/pages.html">Politicas</a>
+  <!-- Sección Bonus -->
+  <section class="bonus-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">
+        Nuestro <span>Bonus</span> Extra
+      </h2>
+
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+          <div class="card bonus-card">
+            <!-- Imagen de la card -->
+            <img src="/assets/images/falta-tiempo.png" alt="Imagen Bonus" class="card-img-top" />
+
+            <div class="card-body">
+              <h5 class="card-title mb-3">Curso de <span>Meta Ads</span></h5>
+              <p class="card-text mb-4">
+                Crea tus propias campañas en Meta de manera profesional sin depender de terceros.
+              </p>
+              <span class="price-tag" style="width: 100%; text-align: center;">Valor $900
+                <hr>Ahora Gratis
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Copyright -->
-  </footer>
+  </section>
 
-  <!-- End of .container -->
 
-<script src="./static/app.js"></script>
+  <!-- Sección Testimonios -->
+  <section class="testimonials-section py-5">
+    <div class="container text-white">
+      <h2 class="text-center mb-3">
+        ¿Qué dicen de <span>nosotros</span>?
+      </h2>
+      <p class="text-center mb-5">
+        Ya hemos ayudado a más de 150 negocios
+      </p>
+
+      <!-- Contenedor para scroll horizontal -->
+      <div class="testimonials-row d-flex flex-nowrap overflow-auto gap-3">
+        <!-- Tarjeta 1 -->
+        <div class="card testimonial-card">
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-3">
+              <img src="/assets/images/testimonio 1.jpg" alt="Foto Testimonio 1" class="rounded-circle" width="50"
+                height="50" />
+              <div class="ms-3">
+                <!-- 5 estrellas doradas -->
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+            </div>
+            <p class="card-text">
+              Excelente servicio, me ayudaron a conseguir más clientes de lo que
+              esperaba. ¡Muy recomendable!
+            </p>
+            <h6 class="fw-bold mb-0">Juan Pérez</h6>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="card testimonial-card">
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-3">
+              <img src="/assets/images/testimonio 2.jpg" alt="Foto Testimonio 2" class="rounded-circle" width="50"
+                height="50" />
+              <div class="ms-3">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+            </div>
+            <p class="card-text">
+              Mi despacho creció notablemente gracias a sus estrategias de marketing.
+            </p>
+            <h6 class="fw-bold mb-0">María Rodríguez</h6>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="card testimonial-card">
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-3">
+              <img src="/assets/images/testimonio 3.jpg" alt="Foto Testimonio 3" class="rounded-circle" width="50"
+                height="50" />
+              <div class="ms-3">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+            </div>
+            <p class="card-text">
+              Lo mejor de todo es que no tuve que ser un experto en Marketing Digital;
+              ellos se encargaron de todo.
+            </p>
+            <h6 class="fw-bold mb-0">Carlos López</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Stacking / Resumen -->
+  <section class="stacking-section py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+
+          <!-- Card con borde negro -->
+          <div class="card border-dark text-center p-4">
+            <h2 class="mb-3"> <span>Resumen</span></h2>
+            <p class="mb-4">Todo lo que incluye tu Landing Page</p>
+
+            <!-- Lista con palomitas -->
+            <ul class="list-unstyled text-start mb-4">
+              <li class="mb-2">
+                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                Landing Page Profesional
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                Chatbot con Inteligencia Artificial
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                Botones a Whatsapp
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                Lead Magnet
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                Optimización SEO
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                Nuestro Bonus
+              </li>
+            </ul>
+
+            <!-- Precio -->
+            <p class="price mb-4">
+              Todo tiene un valor de
+              <span class="price-old">5000 pesos</span><br>
+              Solo hasta final de mes por
+              <span>1999 pesos</span>
+            </p>
+
+            <!-- Línea divisoria -->
+            <hr class="light-green-hr">
+
+            <!-- Botón de información -->
+            <div class="text-center">
+              <a href="https://api.whatsapp.com/send?phone=TU_NUMERO" class="btn btn-lg btn-whatsapp px-4 py-2">
+                <i class="bi bi-whatsapp me-2"></i>
+                Quiero más información
+              </a>
+            </div>
+          </div>
+          <!-- Fin de la card -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Garantía -->
+  <section class="guarantee-section text-center">
+    <div class="container">
+      <!-- Imagen de la garantía (galardón) -->
+      <img src="/assets/images/GARANTIA 14 DIAS.png" alt="Imagen de Garantía" class="img-fluid guarantee-image mb-4" />
+
+      <!-- Título con span resaltado -->
+      <h2 class="mb-3">
+        Garantía de <span>14 días</span> de devolución del dinero
+      </h2>
+
+      <!-- Párrafo explicativo -->
+      <p>
+        Queremos transmitirte toda la confianza y seguridad cuando tomes esta
+        decisión, por lo que si tu Landing Page no es lo que esperabas te
+        devolvemos el 100% de tu dinero del importe pagado.
+      </p>
+    </div>
+  </section>
+
+  <!-- Sección Preguntas Frecuentes -->
+  <section class="faq-section py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">
+        <span>Preguntas</span> frecuentes
+      </h2>
+      <p class="text-center mb-5">
+        Si tienes alguna pregunta especial estamos en WhatsApp
+      </p>
+
+      <!-- Accordion de Bootstrap -->
+      <div class="accordion" id="faqAccordion">
+        <!-- Pregunta 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              ¿Cómo se implementa la Landing Page?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="faqOne"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Te entregamos todos los archivos y configuraciones necesarias para que tu Landing Page quede lista en tu
+              hosting, o te orientamos paso a paso en el proceso.
+            </div>
+          </div>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              ¿Necesito tener conocimientos de Marketing?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              No es necesario. Nosotros nos encargamos de la parte técnica y te damos recomendaciones para optimizar tu
+              embudo de ventas.
+            </div>
+          </div>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              ¿Cuánto tiempo tarda en estar lista la Landing Page?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="faqThree"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Normalmente en un plazo de 3 a 5 días hábiles, dependiendo de la complejidad y revisiones finales.
+            </div>
+          </div>
+        </div>
+
+        <!-- Pregunta 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              ¿Qué pasa si no estoy satisfecho con el resultado?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="faqFour"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Contamos con una garantía de satisfacción. Si algo no cumple tus expectativas, trabajaremos contigo para
+              solucionarlo o te devolvemos tu dinero.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Fin del Accordion -->
+    </div>
+  </section>
+
+
+  <!-- Sección Call-to-Action -->
+  <section class="cta-section py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Columna con título, párrafo y lista -->
+        <div class="col-md-6 mb-4 mb-md-0 text-start text-md-start">
+          <h2 class="mb-3">
+            Apúntate ahora y <span>empieza hoy mismo</span>
+          </h2>
+          <p class="mb-4 ">
+            Todo lo que necesita un abogado en un mismo lugar:
+          </p>
+          <ul class="list-unstyled ">
+            <li>
+              <i class="bi bi-check-circle-fill text-success me-2"></i>
+              Anuncios
+            </li>
+            <li>
+              <i class="bi bi-check-circle-fill text-success me-2"></i>
+              Landing Page
+            </li>
+            <li>
+              <i class="bi bi-check-circle-fill text-success me-2"></i>
+              Lead Magnet
+            </li>
+            <li>
+              <i class="bi bi-check-circle-fill text-success me-2"></i>
+              Chatbot con Inteligencia Artificial
+            </li>
+          </ul>
+        </div>
+
+        <!-- Columna con el botón de WhatsApp -->
+        <div class="col-md-4 text-center text-md-end">
+          <!-- Ajusta el enlace a tu número de WhatsApp -->
+          <a href="https://api.whatsapp.com/send?phone=TU_NUMERO" class="btn btn-lg btn-whatsapp px-4 py-2">
+            <i class="bi bi-whatsapp me-2"></i>
+            Quiero más información
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Contador -->
+<section class="counter-section py-5">
+  <div class="container text-center">
+
+    <!-- Título -->
+    <h2 class="mb-3">
+      <span>Tenemos</span> una sorpresa más
+    </h2>
+
+    <!-- Descripción 1 -->
+    <p class="mb-2">
+      Los 20 primeros interesados obtendrán un descuento del 40%
+    </p>
+    <!-- Descripción 2 -->
+    <p class="mb-4">
+      Aprovecha esta <b>oferta</b> antes de que acabe el tiempo 
+      (solo hasta el final del mes)
+    </p>
+
+    <!-- Contenedor del contador -->
+    <div id="countdown" class="countdown-timer d-flex justify-content-center align-items-center flex-wrap">
+      <!-- DÍAS -->
+      <div class="time-segment me-3 mb-3">
+        <span id="days" class="time-value">0</span>
+        <p class="time-label">DÍAS</p>
+      </div>
+      <!-- HORAS -->
+      <div class="time-segment me-3 mb-3">
+        <span id="hours" class="time-value">0</span>
+        <p class="time-label">HORAS</p>
+      </div>
+      <!-- MINUTOS -->
+      <div class="time-segment me-3 mb-3">
+        <span id="minutes" class="time-value">0</span>
+        <p class="time-label">MIN</p>
+      </div>
+      <!-- SEGUNDOS -->
+      <div class="time-segment mb-3">
+        <span id="seconds" class="time-value">0</span>
+        <p class="time-label">SEG</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="footer-section bg-dark text-white py-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Sección de enlaces legales -->
+      <div class="col-md-6 mb-3 mb-md-0">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item me-3">
+            <a href="#privacidad" class="footer-link">Política de Privacidad</a>
+          </li>
+          <li class="list-inline-item me-3">
+            <a href="#cookies" class="footer-link">Cookies</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#aviso-legal" class="footer-link">Aviso Legal</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Sección de Copywriting -->
+      <div class="col-md-6 text-md-end">
+        <small class="d-block">
+          &copy; <span id="year"></span> Neto Web. Todos los derechos reservados.
+        </small>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Script opcional para año automático -->
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+
+<!-- Script para el contador (AJUSTA LA FECHA A TU NECESIDAD) -->
+<script src="/assets/js/contador.js"></script>
+
+
+
+  <!-- Scripts de Bootstrap (JS) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

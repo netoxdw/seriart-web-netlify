@@ -1,0 +1,697 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+p {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/* Navbar */
+.custom-navbar {
+  /* Para que el navbar se superponga y sea transparente */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: transparent !important;
+  /* Sobrescribe el fondo */
+  /* Si deseas que sea completamente transparente, usa la propiedad background: none !important; */
+}
+
+.navbar-brand {
+  color: #fff;
+}
+
+
+/********************************
+  ESTILOS PARA LA SECCIÓN PRINCIPAL
+*********************************/
+.hero {
+  /* Ajusta la ruta de tu imagen de fondo */
+  background: url('/assets/img/hero-bg-2.jpg') no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  /* Ajusta la altura mínima */
+  padding-top: 80px;
+  /* Para evitar que el contenido quede debajo del navbar */
+  padding-bottom: 80px;
+}
+
+/* Para el texto sobre fondo oscuro, en caso de que la imagen sea oscura, 
+     podrías usar text-white o un color que contraste bien. */
+
+/* Color del span */
+.hero h1 {
+  font-weight: 700;
+}
+
+span {
+  color: #1ab3c0;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.hero li {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Botón de WhatsApp */
+.btn-whatsapp {
+  width: 90%;
+  background-color: #ecaa47;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: #d49a3e;
+  /* Un tono más oscuro al pasar el mouse */
+}
+
+.ratio iframe {
+  border: 3px solid #eefdfd;
+  border-radius: 15px;
+}
+
+/********************************
+  SECCIÓN PROBLEMA-SOLUCIÓN
+*********************************/
+.problem-solution {
+  background-color: #f1f1f1;
+}
+
+.problem-solution h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+/* Encabezado con h2 y un span destacado */
+.problem-solution h2 span {
+  color: #1ab3c0;
+  /* Puedes ajustarlo o mantener el estilo que usas antes */
+}
+
+.problem-solution p {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/* Card horizontal (estilo opcional adicional) */
+.horizontal-card {
+  padding: 15px;
+}
+
+.horizontal-card .card-body {
+  padding: 1.5rem;
+}
+
+.horizontal-card img {
+  width: 100%;
+}
+
+.horizontal-card .card-title {
+  font-weight: 800;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+.horizontal-card span {
+  color: #1ab3c0;
+}
+
+.horizontal-card .card-text {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/********************************
+  SECCIÓN CARACTERÍSTICAS
+*********************************/
+
+/* Sección con fondo oscuro. 
+   (Si prefieres establecerlo directamente en el CSS en lugar de usar 
+   las clases de Bootstrap, podrías usar .features-section { background-color: #000; } ) */
+.features-section {
+  background-color: black;
+}
+
+/* Puedes personalizar aún más los encabezados y párrafos en esta sección */
+.features-section h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.features-section p {
+  color: #fff;
+  /* Asegura el contraste sobre el fondo oscuro */
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.features-section span {
+  color: #1ab3c0;
+}
+
+/* Estilos para las tarjetas */
+.feature-card {
+  background-color: #212529;
+  /* Un gris oscuro para diferenciarlas del fondo negro */
+  border: none;
+  /* Eliminamos el borde por defecto de la card */
+}
+
+.feature-card .card-title {
+  color: #1ab3c0;
+  /* Ejemplo de color destacado para los títulos */
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.feature-card .card-text {
+  color: #f8f9fa;
+  font-size: 1rem;
+  font-size: 1rem;
+}
+
+/********************************
+  SECCIÓN ABOUT ME
+*********************************/
+/* Fondo blanco para toda la sección */
+.about-me-section {
+  background-color: #fff;
+}
+
+/* Contenedor tipo hoja */
+.paper-container {
+  background-color: #fff;
+  /* Aseguramos el fondo blanco */
+  border-radius: 8px;
+  /* Borde redondeado */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  /* Sombra para dar efecto de hoja */
+}
+
+/* Estilo de la foto (opcional) */
+.foto-about-me {
+  max-width: 180px;
+  /* Controla el tamaño máximo de la foto */
+  border: 4px solid #ecaa47;
+  /* Un borde decorativo; ajusta el color */
+  object-fit: cover;
+}
+
+.about-me-section h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.about-me-section p {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.about-me-section h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.about-me-section span {
+  color: #1ab3c0;
+}
+
+
+
+/************************************
+  SECCIÓN "¿Para quién es una Landing Page?"
+*************************************/
+.lp-target-section {
+  background-color: #f1f1f1;
+  /* Color de fondo */
+}
+
+/* Ajustes opcionales de tipografía y espaciado */
+.lp-target-section h3 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  /* Puedes ajustar el tamaño, por ejemplo:
+  */
+}
+
+.lp-target-section span {
+  color: #1ab3c0;
+}
+
+.lp-target-section p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+/* Tarjeta con borde solo en los lados */
+.side-border-card {
+  border: none;
+  /* Primero quitamos todos los bordes por defecto */
+  border-right: 2px solid #1ab3c0;
+  /* Borde derecho */
+  border-top: none;
+  border-bottom: none;
+  background-color: transparent;
+}
+
+.side-border-card h5 {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.side-border-card p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+
+/********************************
+  SECCIÓN CTA
+*********************************/
+.cta-section {
+  /* Ajusta la ruta de tu imagen de fondo */
+  background: url('/assets/images/cta.bg.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+  /* Texto blanco para contrastar con la imagen de fondo */
+}
+
+
+/* Asegura que el contenido esté por encima, 
+   si usas un overlay (opcional) */
+.cta-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Destacar el span dentro del h2 */
+
+.cta-section p {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.cta-section li {
+  font-weight: 700;
+}
+
+/* Estilo para el botón */
+.btn-whatsapp {
+  background-color: #ecaa47;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: #d49a3e;
+  /* Tono más oscuro al pasar el mouse */
+}
+
+
+/********************************
+  SECCIÓN BONUS
+*********************************/
+.bonus-section {
+  background-color: #fff;
+  /* Fondo blanco para toda la sección */
+}
+
+/* Resaltar la palabra "Bonus" en el h2 */
+
+
+/* Card del Bonus */
+.bonus-card {
+  border: none;
+  /* Sin bordes en la card */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  /* Sombra ligera */
+  border-radius: 8px;
+}
+
+.bonus-card h5 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.bonus-card p {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Estilo para las etiquetas (Valor y Ahora Gratis) */
+.price-tag {
+  display: inline-block;
+  background-color: #eefdfd;
+  /* Azul suave */
+  color: #1ab3c0;
+  /* Texto azul para resaltar */
+  border: 1px solid #1ab3c0;
+  /* Mismo tono de borde */
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+
+/********************************
+  SECCIÓN TESTIMONIOS
+*********************************/
+.testimonials-section {
+  background-color: #000;
+  /* Fondo negro para toda la sección */
+}
+
+.testimonials-section>.container>p {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.testimonials-row {
+  justify-content: center;
+}
+
+/* Ajustes de las tarjetas */
+.testimonial-card {
+  width: 300px;
+  /* Ancho mínimo de cada tarjeta para el scroll */
+  background-color: #fff;
+  color: #000;
+  /* Texto negro dentro de la tarjeta */
+  border: none;
+  /* Sin bordes por defecto */
+  border-radius: 8px;
+  /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Sombra sutil */
+  flex-shrink: 0;
+  /* Evita que la tarjeta se reduzca más allá de su min-width */
+}
+
+
+/* Espaciado dentro de la tarjeta */
+.testimonial-card .card-body {
+  padding: 1.5rem;
+}
+
+/* Alinea mejor los elementos dentro de la tarjeta */
+.testimonial-card img {
+  object-fit: cover;
+  /* Si la foto no es cuadrada, se ajustará centrada y recortada */
+}
+.testimonial-card p{
+  font-size: 1rem;
+}
+
+
+/****************************************
+  SECCIÓN STACKING / RESUMEN
+*****************************************/
+
+
+/* Card con borde negro (ya lo definimos en HTML con border-dark) */
+.card.border-dark {
+  border-width: 3px;
+  /* Ajusta el grosor del borde si lo deseas */
+  border-radius: 8px;
+}
+
+.stacking-section li {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.stacking-section .price {
+  font-size: 1.25rem;
+}
+
+/* Precio original (tachado, color rojo) */
+.price-old {
+  color: red;
+  text-decoration: line-through;
+  font-weight: 600;
+}
+
+/* Precio nuevo (destacado) */
+.price-new {
+  color: #1ab3c0;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* Estilo del hr en color verde claro */
+.light-green-hr {
+  border: 0;
+  height: 3px;
+  background-color: #18a9b7;
+  /* Ajusta el tono de verde claro */
+  margin: 1.5rem 0;
+}
+
+/* Botón personalizado */
+.btn-info-custom {
+  background-color: #ecaa47;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-info-custom:hover {
+  background-color: #d49a3e;
+  /* Tono más oscuro al pasar el mouse */
+}
+
+
+/********************************
+  SECCIÓN GARANTÍA
+*********************************/
+.guarantee-section {
+  background-color: #f1f1f1; /* Fondo gris claro */
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+.guarantee-section p{
+  font-size: 1.1rem;
+}
+/* Imagen de garantía */
+.guarantee-image {
+  max-width: 200px;  /* Ajusta el tamaño máximo de la imagen */
+  height: auto;
+  object-fit: contain;
+}
+
+/********************************
+  SECCIÓN PREGUNTAS FRECUENTES
+*********************************/
+.faq-section {
+  background-color: #ffffff; /* Fondo blanco */
+}
+
+/* Título y subtítulo */
+.faq-section h2 {
+  font-weight: 700;
+}
+.faq-section h2 span {
+  color: #1ab3c0; /* Ajusta el color que gustes para “Preguntas” */
+}
+
+/* Margen en preguntas y respuestas (opcional) */
+.accordion-button {
+  font-weight: 600;
+}
+
+/* Ajustes de colores o bordes de las preguntas */
+.accordion-item {
+  border: none; /* Quita borde por defecto */
+  border-bottom: 1px solid #ccc; /* Borde inferior sutil entre items */
+}
+
+/* Cambia el color de fondo del heading al estar abierto (opcional) */
+.accordion-button:not(.collapsed) {
+  background-color: #f1f1f1; 
+}
+
+/* Opcional: Estilo para el cuerpo de la respuesta */
+.accordion-body {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+
+/***********************************
+  SECCIÓN CONTADOR
+************************************/
+.counter-section {
+  background-color: #fff; /* Fondo blanco */
+}
+
+/* Título: resaltamos la palabra "Tenemos" */
+.counter-section h2 span {
+  color: #1ab3c0; /* Ajusta el color si lo prefieres */
+}
+
+/* Contenedor del contador */
+.countdown-timer {
+  background-color: #e6f7ff; /* Azul claro */
+  border: 2px solid #1ab3c0; /* Borde llamativo */
+  border-radius: 8px;
+  padding: 1.5rem;
+  max-width: 600px; /* Ancho máximo para centrarlo */
+  margin: 0 auto;   /* Centra horizontalmente */
+}
+
+/* Segmentos del contador (DÍAS, HORAS, etc.) */
+.time-segment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px; /* Controla el ancho de cada bloque */
+}
+
+/* Valor numérico del tiempo */
+.time-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1ab3c0;
+}
+
+/* Etiqueta de cada bloque (DÍAS, HORAS, MIN, SEG) */
+.time-label {
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+
+/********************************
+  FOOTER
+*********************************/
+.footer-section {
+  background-color: #000; /* Fondo negro */
+}
+
+.footer-link {
+  color: #f1f1f1; /* Color claro para texto */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #1ab3c0; /* Color de hover (personalízalo) */
+}
+
+/* Ajusta la alineación en pantallas pequeñas y grandes */
+@media (max-width: 767.98px) {
+  .footer-section .col-md-6.text-md-end {
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+
+
+
+@media (max-width: 767.98px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .problem-solution p {
+    font-size: 1.2rem;
+  }
+
+  .features-section h2 {
+    font-size: 1.8rem
+  }
+
+  .features-section p {
+    font-size: 1.2rem;
+  }
+
+  .about-me-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-me-section p {
+    font-size: 1.1rem;
+  }
+
+  .lp-target-section h3 {
+    font-size: 1.8rem;
+  }
+
+  .lp-target-section p {
+    font-size: 1.2rem;
+  }
+
+  .cta-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .cta-section p {
+    font-size: 1.2rem;
+  }
+
+  .testimonials-section>.container>p {
+    font-size: 1.2rem;
+  }
+
+  .testimonials-row {
+    justify-content: start;
+  }
+
+  .stacking-section li {
+    font-size: 0.9rem;
+  }
+
+  .stacking-section .price {
+    font-size: 1rem;
+  }
+
+  .guarantee-image {
+    max-width: 150px;  /* Ajusta el tamaño máximo de la imagen */
+    height: auto;
+    object-fit: contain;
+  }
+
+
+  .time-segment {
+    width: 50px; /* Controla el ancho de cada bloque */
+  }
+  .time-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1ab3c0;
+  }
+}
