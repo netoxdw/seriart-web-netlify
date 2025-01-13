@@ -97,7 +97,7 @@ span {
 
 .problem-solution h2 {
   font-size: 2.5rem;
-  font-weight: 900;
+  font-weight: 800;
 }
 
 /* Encabezado con h2 y un span destacado */
@@ -608,6 +608,9 @@ span {
     font-size: 1.2rem;
   }
 
+  .problem-solution h2{
+    font-size: 1.8rem;
+  } 
   .problem-solution p {
     font-size: 1.2rem;
   }
